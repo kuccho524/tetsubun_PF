@@ -25,6 +25,11 @@
   list-style: none;
   font-family: 'Kosugi Maru', sans-serif;
   margin: 0 auto;
+  border-bottom: 1px solid #f0f8ff;
+}
+
+.user-lists .user-area {
+  margin-top: 5px;
 }
 
 .user-area {
@@ -43,10 +48,6 @@
 
 .user-lists:nth-child(10+n) {
   margin: 0;
-}
-
-hr {
-  width: 450px;
 }
 
 /* スマートフォンサイズ（425px）以下の際に適用される設定 */

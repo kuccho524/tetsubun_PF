@@ -1,3 +1,23 @@
 // Place all the styles related to the train_comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.train-comments {
+  margin-bottom: 10px;
+}
+
+.train-comments {
+  font-family: 'Kosugi Maru', sans-serif;
+  display: flex;
+  list-style: none;
+  &__comment-name {
+    font-weight: bold;
+  }
+  &__comment-body {
+    margin: 0 20px;
+  }
+}
+
+.comment-lists {
+  margin-bottom: 30px;
+}
