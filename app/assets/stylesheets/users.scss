@@ -1,3 +1,124 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user-info {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  font-family: 'Kosugi Maru', sans-serif;
+  &__user-image .profile_image {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &__user-name {
+    font-family: 'Kosugi Maru', sans-serif;
+  }
+  &__introduction {
+    font-family: 'Kosugi Maru', sans-serif;
+  }
+}
+
+.user-info__user-image .profile_image {
+  margin: 0 auto;
+}
+
+.user-info__user-detail {
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 5px;
+}
+
+.edit-link {
+  margin-top: 20px;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.chat-link {
+  margin-top: 20px;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.links {
+  margin-bottom: 40px;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.my-page {
+  margin-top: 30px;
+}
+
+.form-group {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.image .profile_image {
+  height: 350px;
+  width: 480px;
+}
+
+.form-group .name input {
+  width: 480px;
+  height: 40px;
+}
+
+.user-info .train_image {
+  border-radius: 100%;
+}
+
+.form-group .introduction textarea {
+  width: 480px;
+  height: 150px;
+}
+
+/* スマートフォンサイズ（425px）以下の際に適用される設定 */
+@media screen and (max-width: 425px) {
+  .my-page {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .user-info {
+    display: block;
+  }
+
+  .user-info__user-name {
+    margin: 10px auto;
+  }
+
+  .user-info__introduction {
+    text-align: center;
+  }
+
+  .user-info__relationship {
+    margin: 0 auto 20px;
+  }
+
+  .user-info .table th:nth-child(2) {
+    width: 75px;
+  }
+
+  .user-info .favorite-count {
+    display: none;
+  }
+
+  .image .profile_image {
+    height: 300px;
+    width: 275px;
+  }
+
+  .buttons {
+    text-align: center;
+  }
+
+  .chat-link {
+    margin-bottom: 20px;
+  }
+
+  .edit-link {
+    margin-bottom: 20px;
+  }
+}

@@ -1,3 +1,42 @@
 // Place all the styles related to the searches controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user-lists {
+  font-family: 'Kosugi Maru', sans-serif;
+  list-style: none;
+  border-bottom: 1px solid #f0f8ff;
+}
+
+.user-lists .user-area {
+  margin-top: 5px;
+}
+
+.user-lists .introductions {
+  margin-bottom: 3px;
+}
+
+.introduction {
+  margin: 5px auto;
+}
+
+.search-result {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  min-height: 80vh;
+}
+
+.search-result .profile_image {
+  border-radius: 100%;
+}
+
+.pagination {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.no-user,
+.no-train {
+  text-align: center;
+  font-family: 'Kosugi Maru', sans-serif;
+}

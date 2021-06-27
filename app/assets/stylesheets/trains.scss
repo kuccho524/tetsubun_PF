@@ -1,3 +1,142 @@
 // Place all the styles related to the trains controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.links {
+  margin-top: 20px;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.train-index {
+  margin: 40px 0;
+}
+
+.train-info {
+  margin: 30px 0;
+  margin-left: 125px;
+}
+
+.train-info ul {
+  list-style: none;
+}
+
+.train-info {
+  font-family: 'Kosugi Maru', sans-serif;
+  &__train-line {
+    display: flex;
+    font-size: 20px;
+  }
+  &__train-body {
+    font-size: 20px;
+  }
+  &__train-body span {
+    font-size: 18px;
+  }
+}
+
+.train-info__train-line {
+  margin-bottom: 10px;
+}
+
+.train-info__train-line strong {
+  margin-right: 15px;
+}
+
+.image .train_image {
+  margin-top: 20px;
+  height: 500px;
+  width: 70%;
+}
+
+.comment-form {
+  margin-bottom: 40px;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+#comment-area textarea {
+  width: 650px;
+  height: 150px;
+}
+
+.train-new-form,
+.train-edit-form {
+  margin-top: 30px;
+}
+
+.form-group {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.new-train-image .train_image,
+.edit-train-image .train_image {
+  height: 350px;
+  width: 480px;
+}
+
+.train-new-form textarea,
+.train-edit-form textarea {
+  height: 150px;
+  width: 480px;
+}
+
+.form-group:last-child {
+  margin-bottom: 30px;
+}
+
+.link-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.link-buttons__edit {
+  margin-right: 50px;
+}
+
+.link-buttons__home {
+  margin-right: 50px;
+}
+
+/* スマートフォンサイズ（425px）以下の際に適用される設定 */
+@media screen and (max-width: 425px) {
+  .link-buttons {
+    width: 390px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .link-buttons__edit {
+    margin-right: auto;
+  }
+
+  .link-buttons__user {
+    margin-right: 20px;
+  }
+
+  .image .train_image,
+  .new-train-image .train_image,
+  .edit-train-image .train_image {
+    height: 300px;
+    width: 300px;
+  }
+
+  #comment-area textarea {
+    width: 350px;
+    height: 100px;
+  }
+
+  .train-new-form textarea,
+  .train-edit-form textarea {
+    width: 300px;
+    height: 150px;
+  }
+
+  .link-buttons .btn {
+    margin-bottom: 20px;
+  }
+
+  .train-info {
+    margin-left: -5px;
+  }
+}

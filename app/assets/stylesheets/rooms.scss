@@ -1,3 +1,225 @@
 // Place all the styles related to the rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.no-message {
+  min-height: 55vh;
+  text-align: center;
+  margin: 40px 0;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.chat-rooms {
+  margin: 30px 0;
+  min-height: 60vh;
+}
+
+.card-deck {
+  margin-top: 20px;
+}
+
+.card-name {
+  margin-bottom: 5px;
+}
+
+.card-body {
+  &__card-name {
+    font-family: 'Kosugi Maru', sans-serif;
+  }
+  &__card-message {
+    font-family: 'Kosugi Maru', sans-serif;
+  }
+}
+
+.card-message {
+  margin-bottom: 5px;
+}
+
+.chat-background {
+  margin: 30px 0;
+}
+
+.chat-lists {
+  margin: 55px 0;
+  background-color: #fff;
+  width: 800px;
+  overflow-x: scroll
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  &__chat-user {
+    height: 60px;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.list {
+
+}
+
+.list__chat-user {
+  margin: auto 10px;
+}
+
+.list__chat-user .profile_image {
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.list__chat-user--chat-user-name {
+  margin-right: 10px;
+}
+
+.chat-messages {
+  width: 100%;
+  background-color: #66ccff;
+}
+
+.chat-index-link {
+  margin-bottom: 40px;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.messages {
+  margin: 20px 0;
+}
+
+.right-message {
+  margin-right: 10px;
+  text-align: right;
+}
+
+.right-link {
+  font-family: 'Kosugi Maru', sans-serif;
+  text-align: right;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.balloon-right {
+  display: inline-block;
+  position: relative;
+  margin: 5px 0 10px 50px;
+  padding: 10px;
+  max-width: 250px;
+  border-radius: 12px;
+  background: #30e852;
+}
+
+.balloon-right strong {
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  margin: 0 10px 0 0;
+  padding: 8px;
+  max-width: 250px;
+  border-radius: 12px;
+  background: #30e852;
+  font-size: 15px；
+}
+
+.balloon-right:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -19px;
+  border: 8px solid transparent;
+  border-left: 18px solid #30e852;
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+
+.left-message {
+  width: 100%;
+  overflow: hidden;
+  &__chat-icon {
+    width: 40px;
+    float: left;
+    &--opponent-user {
+      color: black;
+    }
+  }
+}
+
+.left-message {
+  margin: 10px 0;
+}
+
+.left-message__chat-icon {
+  margin-top: 5px;
+  margin-right: -50px;
+  margin-left: 5px;
+}
+
+.left-message__chat-icon .profile_image {
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.balloon-left {
+  display: inline-block;
+  position: relative;
+  margin: 5px 0 0 60px;
+  padding: 10px;
+  max-width: 250px;
+  border-radius: 12px;
+  background: #edf1ee;
+}
+
+.balloon-left:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid #edf1ee;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+
+.balloon-left strong {
+  margin: 0;
+  padding: 0;
+}
+
+.chat-messages .error {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.message-form {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.message-form textarea {
+  width: 590px;
+  height: 80px;
+}
+
+.messsage-submit-btn .btn {
+  font-family: 'Kosugi Maru', sans-serif;
+  margin-bottom: 30px;
+}
+
+/* スマートフォンサイズ（425px）以下の際に適用される設定 */
+@media screen and (max-width: 425px) {
+  .chat-lists {
+    background-color: #fff;
+    width: 340px;
+    overflow-x: scroll
+  }
+
+  .message-form textarea {
+  width: 340px;
+  height: 80px;
+  }
+}
