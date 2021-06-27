@@ -1,0 +1,29 @@
+<!-- 新規投稿フォーム -->
+<%= form_with model: train, url: trains_path, method: :post, local:true do |f| %>
+
+  <!-- エラー表示 -->
+  <%= render 'shared/errors', obj: train %>
+
+  <section class="train-new-form">
+    <div class="form-group">
+      <%= f.label :画像, class: "font-weight-bold" %>
+      <%= f.attachment_field :train_image, class: "form-control-file train_image" %>
+
+      <!-- 画像のプレビューを表示 -->
+      <div class="new-train-image">
+        <%= attachment_image_tag train, :train_image, format: 'jpg', fallback: "no_image.jpg", class: "image-preview" %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :路線, class: "font-weight-bold" %><br>
+      <%= f.select :line, Train.lines.keys.to_a %>
+    </div>
+    <div class="form-group">
+      <%= f.label :本文, class: "font-weight-bold" %><br>
+      <%= f.text_area :body %>
+    </div>
+    <div class="form-group">
+      <%= f.submit "投稿", class: "btn btn-success" %>
+    </div>
+  </section>
+<% end %>

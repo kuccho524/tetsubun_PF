@@ -13,6 +13,13 @@ class Users::SessionsController < Devise::SessionsController
   #   super
   # end
 
+  # ゲストユーザ
+  def guest_sign_in
+    user = User.guest
+    sign_in user
+    redirect_to root_path, notice: 'ゲストログインしました。'
+  end
+
   # DELETE /resource/sign_out
   # def destroy
   #   super

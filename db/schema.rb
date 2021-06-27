@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_26_234256) do
+ActiveRecord::Schema.define(version: 2021_06_27_025203) do
 
   create_table "entries", force: :cascade do |t|
     t.integer "user_id"
@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 2021_06_26_234256) do
   end
 
   create_table "rooms", force: :cascade do |t|
-    t.string "name", null: false
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

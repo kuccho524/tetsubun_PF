@@ -1,0 +1,16 @@
+<!-- 投稿内容を表示 -->
+<div class="image text-center">
+  <%= attachment_image_tag(train, :train_image, format: "jpg", fallback: "no_image.jpg") %>
+</div>
+<section class="train-info col-sm-8">
+  <ul>
+    <div class="train-info__train-line">
+      <li><strong>路線</strong></li>
+      <li><%= train.line %></li>
+    </div>
+    <div class="train-info__train-body">
+      <li><strong>本文</strong></li>
+      <li><span><%= train.body %></span></li>
+    </div>
+  </ul>
+</section>
