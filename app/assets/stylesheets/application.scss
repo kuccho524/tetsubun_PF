@@ -221,6 +221,10 @@ main {
   }
   &__card-train-body {
     font-family: 'Kosugi Maru', sans-serif;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
   }
   &__train-activities {
     display: flex;

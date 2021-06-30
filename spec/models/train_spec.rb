@@ -12,18 +12,14 @@ RSpec.describe 'Trainモデルのテスト', type: :model do
         train.body = ''
         is_expected.to eq false
       end
-      it '3文字以上であること: 3文字は◯' do
-        train.body = Faker::Lorem.characters(number: 3)
+      it '1文字以上であること: 1文字は◯' do
+        train.body = Faker::Lorem.characters(number: 1)
       end
-      it '50文字以下であること: 50文字は◯' do
+      it '140文字以下であること: 140文字は◯' do
         train.body = Faker::Lorem.characters(number: 50)
       end
-      it '3文字以上であること: 2文字は×' do
-        train.body = Faker::Lorem.characters(number: 2)
-        is_expected.to eq false
-      end
-      it '50文字以下であること: 51文字は×' do
-        train.body = Faker::Lorem.characters(number: 51)
+      it '140文字以下であること: 141文字は×' do
+        train.body = Faker::Lorem.characters(number: 141)
         is_expected.to eq false
       end
     end
