@@ -92,6 +92,10 @@ header .fas:hover {
   transform: scale(1.3, 1.3);
 }
 
+header li {
+  margin: auto;
+}
+
 main {
   background-color: #ffffbb;
 }
@@ -332,6 +336,18 @@ footer {
     padding-bottom: 5px;
     margin-left: 0;
     font-family: 'Kosugi Maru', sans-serif;
+  }
+
+  .search-form  #search {
+    width: 100%;
+  }
+
+  .search-form select {
+    width: 100%;
+  }
+
+  .search-form input {
+    width: 100%;
   }
 
   #image-sliders {

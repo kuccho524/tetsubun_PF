@@ -12,13 +12,6 @@
       <% end %>
       <p id="notice"><%= notice %></p>
 
-      <!-- ユーザログイン時に検索窓を表示 -->
-      <% if user_signed_in? %>
-        <div class="search-form">
-          <%= render 'shared/searches/search-form' %>
-        </div>
-      <% end %>
-
       <!-- ハンバーガーバーボタン -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,6 +25,13 @@
           <% else %>
             <%= render 'shared/nouser' %>
           <% end %>
+
+          <!-- ユーザログイン時に検索窓を表示 -->
+            <% if user_signed_in? %>
+              <div class="search-form">
+                <%= render 'shared/searches/search-form' %>
+              </div>
+            <% end %>
         </ul>
       </div>
     </div>
