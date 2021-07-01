@@ -21,7 +21,7 @@
             <div class="card-body__card-train-body"><%= train.body %></div>
             <div class="card-body__train-activities">
               <div id="favorite_<%= train.id %>"><%= render 'shared/favorites/favorite-btn', train: train %></div>
-              <div class="card-body__train-activities--comment-count">コメント数： <%= train.train_comments.count %></div>
+              <div class="card-body__train-activities--comment-count"><span class="fas fa-comment-alt"></span> <%= train.train_comments.count %></div>
             </div>
           </div>
         </div>
