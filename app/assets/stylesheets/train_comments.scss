@@ -2,22 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.train-comments {
-  margin-bottom: 10px;
+.comment-lists {
+  padding: 5px 0;
+  border-bottom: 1px solid #f0f8ff;
 }
 
-.train-comments {
+.train-comment {
   font-family: 'Kosugi Maru', sans-serif;
   display: flex;
   list-style: none;
   &__comment-name {
     font-weight: bold;
   }
-  &__comment-body {
-    margin: 0 20px;
-  }
 }
 
-.comment-lists {
+.train-comment {
+  margin-bottom: 0;
+}
+
+.train-comments {
   margin-bottom: 30px;
+}
+
+.train-comment__comment-body {
+  margin: 0 20px;
 }
