@@ -402,6 +402,14 @@ footer {
     background-size: cover;
     background-position: center;
   }
+
+  #back {
+    display: none;
+  }
+
+  #back .top-icon {
+    dusplay: none;
+  }
 }
 
 /* スマートフォンサイズ（425px）以下の際に適用される設定 */
