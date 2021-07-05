@@ -1,4 +1,4 @@
-name: Rails CI/CD tetsubun_PF
+name: Rails CI/CD
 
 on:
   push:
