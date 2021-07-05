@@ -53,7 +53,7 @@ https://docs.google.com/spreadsheets/d/1Ue5IUjEn4C_pJGp478CfMVnlBtA3ijqe/edit#gi
 アプリケーション詳細設計書<br>
 https://docs.google.com/spreadsheets/d/17LlS8oGryjKE0sBG0XpksbKoVZ5obTZg/edit#gid=1281505798<br>
 
-### チャレンジ要素一覧
+### チャレンジ要素
 https://docs.google.com/spreadsheets/d/1Y4alK0mXdi5_dgJfUNuOS4w_xBcWF-woQOjHPi65cQ0/edit#gid=1373494904<br>
 
 ### 開発環境
