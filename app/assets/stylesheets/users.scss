@@ -74,6 +74,67 @@ p {
   height: 150px;
 }
 
+/* タブレットサイズ（768px）以下の際に適用される設定 */
+@media screen and (max-width: 768px) {
+  .my-page {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .user-info {
+    display: block;
+  }
+
+  .user-info .col-sm-2 {
+    margin-left: 300px;
+  }
+
+  .user-info__user-name {
+    margin: 10px auto;
+    width: 145px;
+    margin-left: -25px;
+  }
+
+  .user-info__introduction {
+    text-align: center;
+  }
+
+  .user-info__relationship {
+    margin: 0 auto 20px;
+    width: 120px;
+    margin-left: -15px;
+  }
+
+  .user-info .table th:nth-child(2) {
+    width: 75px;
+  }
+
+  .user-info .favorite-count {
+    display: none;
+  }
+
+  .image .profile_image {
+    height: 300px;
+    width: 275px;
+  }
+
+  .buttons {
+    text-align: center;
+    width: 315px;
+    margin-left: -105px;
+  }
+
+  .chat-link {
+    margin-bottom: 20px;
+  }
+
+  .edit-link {
+    margin-bottom: 20px;
+    width: 315px;
+    margin-left: -107px;
+  }
+}
+
 /* スマートフォンサイズ（425px）以下の際に適用される設定 */
 @media screen and (max-width: 425px) {
   .my-page {
@@ -83,6 +144,10 @@ p {
 
   .user-info {
     display: block;
+  }
+
+  .user-info .col-sm-2 {
+    margin-left: 0;
   }
 
   .user-info__user-name {
@@ -112,6 +177,7 @@ p {
 
   .buttons {
     text-align: center;
+    margin-left: 0px;
   }
 
   .chat-link {
@@ -120,5 +186,6 @@ p {
 
   .edit-link {
     margin-bottom: 20px;
+    margin-left: 0;
   }
 }
