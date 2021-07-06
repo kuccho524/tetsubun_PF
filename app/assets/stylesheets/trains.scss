@@ -96,7 +96,7 @@
   margin-right: 50px;
 }
 
-/* スマートフォンサイズ（425px）以下の際に適用される設定 */
+/* タブレットサイズ（768px）以下の際に適用される設定 */
 @media screen and (max-width: 768px) {
   #comment-area textarea {
     width: 400px;

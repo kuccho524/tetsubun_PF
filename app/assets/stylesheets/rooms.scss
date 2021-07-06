@@ -62,10 +62,6 @@
   }
 }
 
-.list {
-
-}
-
 .list__chat-user {
   margin: auto 10px;
 }
@@ -212,6 +208,15 @@
 .messsage-submit-btn .btn {
   font-family: 'Kosugi Maru', sans-serif;
   margin-bottom: 30px;
+}
+
+/* タブレットサイズ（768px）以下の際に適用される設定 */
+@media screen and (max-width: 768px) {
+  .chat-lists {
+    background-color: #fff;
+    width: 690px;
+    overflow-x: scroll
+  }
 }
 
 /* スマートフォンサイズ（425px）以下の際に適用される設定 */
