@@ -89,6 +89,10 @@ p {
     margin-left: 300px;
   }
 
+  .user-info .col-sm-10 {
+    margin: 0 auto;
+  }
+
   .user-info__user-name {
     margin: 10px auto;
     width: 145px;
@@ -150,6 +154,10 @@ p {
     margin-left: 0;
   }
 
+  .user-info .col-sm-10 {
+    margin-left: -15px;
+  }
+
   .user-info__user-name {
     margin: 10px auto;
   }
@@ -160,6 +168,11 @@ p {
 
   .user-info__relationship {
     margin: 0 auto 20px;
+  }
+
+  .user-info .table {
+    width: 350px;
+    font-size: 14px;
   }
 
   .user-info .table th:nth-child(2) {
