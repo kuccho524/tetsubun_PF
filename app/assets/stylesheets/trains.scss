@@ -97,6 +97,18 @@
 }
 
 /* スマートフォンサイズ（425px）以下の際に適用される設定 */
+@media screen and (max-width: 768px) {
+  #comment-area textarea {
+    width: 400px;
+    height: 100px;
+  }
+
+  .train-info {
+    margin-left: 70px;
+  }
+}
+
+/* スマートフォンサイズ（425px）以下の際に適用される設定 */
 @media screen and (max-width: 425px) {
   .link-buttons {
     width: 390px;
