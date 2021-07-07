@@ -54,7 +54,7 @@ FaceBookなどの有名なSNSは利用していて少し複雑だなと感じた
   <li>
     <a href="https://docs.google.com/spreadsheets/d/17LlS8oGryjKE0sBG0XpksbKoVZ5obTZg/edit#gid=1281505798">アプリケーション詳細設計書</a>
   </li>
-<ul>
+</ul>
 
 ### チャレンジ要素一覧
 https://docs.google.com/spreadsheets/d/1Y4alK0mXdi5_dgJfUNuOS4w_xBcWF-woQOjHPi65cQ0/edit#gid=1373494904<br>
