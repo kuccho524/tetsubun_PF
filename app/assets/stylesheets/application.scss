@@ -423,6 +423,12 @@ footer {
     background-position: center;
   }
 
+  .search-form {
+    padding-bottom: 5px;
+    margin-left: 0;
+    font-family: 'Kosugi Maru', sans-serif;
+  }
+
   #back {
     display: none;
   }
@@ -432,8 +438,8 @@ footer {
   }
 }
 
-/* スマートフォンサイズ（375px）以下の際に適用される設定 */
-@media screen and (max-width: 375px) {
+/* スマートフォンサイズ（425px）以下の際に適用される設定 */
+@media screen and (max-width: 425px) {
   #notice {
     display: none;
   }
@@ -544,6 +550,10 @@ footer {
     background-image: image-url("DSC_0155.JPG");
     background-size: cover;
     background-position: center;
+  }
+
+  .new-train-posts {
+    margin: 0 auto;
   }
 
   .d-flex {

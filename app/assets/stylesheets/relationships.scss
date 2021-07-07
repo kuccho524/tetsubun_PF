@@ -25,7 +25,7 @@
 
 // フォロー/フォロワーのリスト
 .user-lists {
-  width: 450px;
+  width: 350px;
   list-style: none;
   font-family: 'Kosugi Maru', sans-serif;
   margin: 0 auto;
@@ -51,26 +51,11 @@
   margin-bottom: 30px;
 }
 
-// 10人目以降z
-.user-lists:nth-child(10+n) {
-  margin: 0;
+.user-lists .follow-counts {
+  margin-bottom: 10px;
 }
 
-/* スマートフォンサイズ（375px）以下の際に適用される設定 */
-@media screen and (max-width: 375px) {
-  .user-lists {
-    display: flex;
-    flex-wrap: wrap;
-    width: 360px;
-    margin: 0 auto;
-  }
-
-  .user-lists li {
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-
-  .user-lists__follow-counts {
-    margin-top: 10px;
-  }
+// 10人目以降
+.user-lists:nth-child(10+n) {
+  margin: 0;
 }

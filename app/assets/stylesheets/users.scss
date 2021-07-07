@@ -151,9 +151,9 @@ p {
   }
 }
 
-/* スマートフォンサイズ（375px）以下の際に適用される設定 */
-@media screen and (max-width: 375px) {
-  .my-page {
+/* スマートフォンサイズ（425px）以下の際に適用される設定 */
+@media screen and (max-width: 425px) {
+  .my-page .user-info {
     width: 100%;
     margin: 20px auto;
   }
@@ -167,7 +167,8 @@ p {
   }
 
   .user-info .col-sm-10 {
-    margin-left: -15px;
+    width: 350px;
+    margin: 0 auto;
   }
 
   .user-info__user-name {
@@ -183,8 +184,8 @@ p {
   }
 
   .user-info .table {
-    width: 345px;
-    font-size: 14px;
+    width: 335px;
+    font-size: 13px;
   }
 
   .user-info .table th:nth-child(2) {
@@ -202,7 +203,7 @@ p {
 
   .buttons {
     text-align: center;
-    margin-left: 0px;
+    margin: 0 auto;
   }
 
   .chat-link {
@@ -210,7 +211,6 @@ p {
   }
 
   .edit-link {
-    margin-bottom: 20px;
-    margin-left: 0;
+    margin: 0 auto 20px;
   }
 }

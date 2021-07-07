@@ -115,14 +115,13 @@
   }
 }
 
-/* スマートフォンサイズ（375px）以下の際に適用される設定 */
-@media screen and (max-width: 375px) {
+/* スマートフォンサイズ（425px）以下の際に適用される設定 */
+@media screen and (max-width: 425px) {
   .link-buttons {
     width: 345px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 auto;
   }
 
   .link-buttons__edit {
@@ -131,6 +130,7 @@
 
   .link-buttons__home {
     margin-right: 0px;
+    justify-content: center;
   }
 
   .link-buttons__user {
