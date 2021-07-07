@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// about
 .about {
   &__about-title {
     font-family: 'Kiwi Maru', serif;
@@ -22,6 +23,7 @@
   margin-top: 20px;
 }
 
+// 新着投稿
 .new-train-posts {
   &__heading {
     font-family: 'Kiwi Maru', serif;
@@ -30,6 +32,7 @@
   }
 }
 
+// タイムライン
 .timeline {
   &__heading {
     font-family: 'Kiwi Maru', serif;
@@ -38,11 +41,13 @@
   }
 }
 
+// 新着投稿、タイムラインの共通
 .new-train-posts,
 .timeline {
   margin-top: 30px;
 }
 
+// 新着投稿リンク
 .link {
   margin: 40px 0;
 }

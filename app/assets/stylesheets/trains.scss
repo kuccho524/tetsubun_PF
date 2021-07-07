@@ -2,15 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// 各リンク
 .links {
   margin-top: 20px;
   font-family: 'Kosugi Maru', sans-serif;
 }
 
+// 記事一覧
 .train-index {
   margin: 40px 0;
 }
 
+// 記事の詳細
 .train-info {
   margin: 30px 0;
   margin-left: 125px;
@@ -42,12 +45,14 @@
   margin-right: 15px;
 }
 
+// 記事の画像
 .image .train_image {
   margin-top: 20px;
   height: 500px;
   width: 70%;
 }
 
+// コメントフォーム
 .comment-form {
   margin-bottom: 40px;
   font-family: 'Kosugi Maru', sans-serif;
@@ -58,6 +63,7 @@
   height: 150px;
 }
 
+// 新規投稿、編集フォーム
 .train-new-form,
 .train-edit-form {
   margin-top: 30px;
@@ -83,6 +89,7 @@
   margin-bottom: 30px;
 }
 
+// 詳細画面のリンク
 .link-buttons {
   display: flex;
   justify-content: center;
@@ -108,10 +115,10 @@
   }
 }
 
-/* スマートフォンサイズ（425px）以下の際に適用される設定 */
-@media screen and (max-width: 425px) {
+/* スマートフォンサイズ（375px）以下の際に適用される設定 */
+@media screen and (max-width: 375px) {
   .link-buttons {
-    width: 390px;
+    width: 345px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -119,11 +126,16 @@
   }
 
   .link-buttons__edit {
-    margin-right: auto;
+    margin-right: 125px;
+  }
+
+  .link-buttons__home {
+    margin-right: 0px;
   }
 
   .link-buttons__user {
     margin-right: 20px;
+    margin-left: 35px;
   }
 
   .image .train_image,

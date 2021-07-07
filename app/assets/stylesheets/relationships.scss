@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// フォロー/フォロワーがいない時の表示
 .no-follows,
 .no-followers {
   min-height: 60vh;
@@ -9,17 +10,20 @@
   margin: 40px 0;
 }
 
+// フォロー/フォロワーがいる時の表示
 .followers,
 .follows {
   margin: 40px 0;
   min-height: 60vh;
 }
 
+// フォロー/フォロワーのユーザイメージ
 .followers .profile_image,
 .follows .profile_image {
  border-radius: 100%;
 }
 
+// フォロー/フォロワーのリスト
 .user-lists {
   width: 450px;
   list-style: none;
@@ -36,6 +40,7 @@
   display: flex;
 }
 
+// フォローボタン
 .user-follow-button {
   margin-left: auto;
 }
@@ -46,12 +51,13 @@
   margin-bottom: 30px;
 }
 
+// 10人目以降z
 .user-lists:nth-child(10+n) {
   margin: 0;
 }
 
-/* スマートフォンサイズ（425px）以下の際に適用される設定 */
-@media screen and (max-width: 425px) {
+/* スマートフォンサイズ（375px）以下の際に適用される設定 */
+@media screen and (max-width: 375px) {
   .user-lists {
     display: flex;
     flex-wrap: wrap;

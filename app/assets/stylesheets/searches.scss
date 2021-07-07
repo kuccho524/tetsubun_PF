@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// ユーザの検索結果表示
 .user-lists {
   font-family: 'Kosugi Maru', sans-serif;
   list-style: none;
@@ -30,11 +31,13 @@
   border-radius: 100%;
 }
 
+// ページング
 .pagination {
   justify-content: center;
   margin-bottom: 20px;
 }
 
+// 検索結果が
 .no-user,
 .no-train {
   text-align: center;

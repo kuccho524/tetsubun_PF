@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// ユーザ情報
 .user-info {
   min-height: 50vh;
   display: flex;
@@ -20,6 +21,7 @@
   }
 }
 
+// ユーザイメージ
 .user-info__user-image .profile_image {
   margin: 0 auto;
 }
@@ -32,21 +34,25 @@ p {
   margin-top: 5px;
 }
 
+// 編集画面のリンク
 .edit-link {
   margin-top: 20px;
   font-family: 'Kosugi Maru', sans-serif;
 }
 
+// チャットルームへのリンク
 .chat-link {
   margin-top: 20px;
   font-family: 'Kosugi Maru', sans-serif;
 }
 
+// 各リンク
 .links {
   margin-bottom: 40px;
   font-family: 'Kosugi Maru', sans-serif;
 }
 
+// マイページ
 .my-page {
   margin-top: 30px;
 }
@@ -55,6 +61,7 @@ p {
   font-family: 'Kosugi Maru', sans-serif;
 }
 
+// プレビュー
 .image .profile_image {
   height: 350px;
   width: 480px;
@@ -79,6 +86,11 @@ p {
   .my-page {
     width: 100%;
     margin: 20px auto;
+  }
+
+  .form-group .image .profile_image {
+    height: 350px;
+    width: 480px;
   }
 
   .user-info {
@@ -139,8 +151,8 @@ p {
   }
 }
 
-/* スマートフォンサイズ（425px）以下の際に適用される設定 */
-@media screen and (max-width: 425px) {
+/* スマートフォンサイズ（375px）以下の際に適用される設定 */
+@media screen and (max-width: 375px) {
   .my-page {
     width: 100%;
     margin: 20px auto;
@@ -171,7 +183,7 @@ p {
   }
 
   .user-info .table {
-    width: 350px;
+    width: 345px;
     font-size: 14px;
   }
 
@@ -183,7 +195,7 @@ p {
     display: none;
   }
 
-  .image .profile_image {
+  .form-group .image .profile_image {
     height: 300px;
     width: 275px;
   }

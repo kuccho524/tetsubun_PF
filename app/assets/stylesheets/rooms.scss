@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// チャットルームにメッセージがない時
 .no-message {
   min-height: 55vh;
   text-align: center;
@@ -9,11 +10,13 @@
   font-family: 'Kosugi Maru', sans-serif;
 }
 
+// チャットルーム一覧
 .chat-rooms {
   margin: 30px 0;
   min-height: 60vh;
 }
 
+// カード
 .card-deck {
   margin-top: 20px;
 }
@@ -39,10 +42,12 @@
   margin-bottom: 5px;
 }
 
+// チャットの背景
 .chat-background {
   margin: 30px 0;
 }
 
+// チャットルームに表示されるチャットリスト
 .chat-lists {
   margin: 55px 0;
   background-color: #fff;
@@ -75,6 +80,7 @@
   margin-right: 10px;
 }
 
+// チャットのメッセージ
 .chat-messages {
   width: 100%;
   background-color: #66ccff;
@@ -89,6 +95,7 @@
   margin: 20px 0;
 }
 
+// current_userのメッセージ
 .right-message {
   margin-right: 10px;
   text-align: right;
@@ -134,6 +141,7 @@
   transform: rotate(-35deg);
 }
 
+// 相手のメッセージ
 .left-message {
   width: 100%;
   overflow: hidden;
@@ -189,12 +197,14 @@
   padding: 0;
 }
 
+// エラー表示
 .chat-messages .error {
   display: flex;
   justify-content: center;
   margin: 0 auto;
 }
 
+// メッセージフォーム
 .message-form {
   margin: 30px 0;
   text-align: center;
@@ -219,8 +229,8 @@
   }
 }
 
-/* スマートフォンサイズ（425px）以下の際に適用される設定 */
-@media screen and (max-width: 425px) {
+/* スマートフォンサイズ（375px）以下の際に適用される設定 */
+@media screen and (max-width: 375px) {
   .chat-lists {
     background-color: #fff;
     width: 340px;

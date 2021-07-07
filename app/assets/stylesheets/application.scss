@@ -23,16 +23,19 @@
   box-sizing: border-box;
 }
 
+// スクロールをスムースにする
 html {
   scroll-behavior: smooth;
 }
 
+// エラー表示
 #notice,
 #error_explanation {
   color: red;
   margin: 5px 5px 5px 20px;
 }
 
+// ホームに戻るアイコン
 .home-icon {
   transition: all 0.3s ease 0s;
 }
@@ -41,6 +44,7 @@ html {
   transform: scale(1.3, 1.3);
 }
 
+// ヘッダーのバルーン
 .balloonoya {
   position: relative;
 }
@@ -72,18 +76,21 @@ html {
   position: absolute;
 }
 
+// ヘッダーに表示するユーザ名
 .user-name {
   margin: 5px 5px 5px 15px;
   font-family: 'Kosugi Maru', sans-serif;
   color: #fff;
 }
 
+// 検索フォーム
 .search-form {
   padding-bottom: 5px;
   margin-left: 20px;
   font-family: 'Kosugi Maru', sans-serif;
 }
 
+// ヘッダーアイコン
 header .fas {
   transition: all 0.3s ease 0s;
 }
@@ -96,10 +103,12 @@ header li {
   margin: auto;
 }
 
+// メインの背景
 main {
   background-color: #ffffbb;
 }
 
+// 画像スライダー
 #image-sliders {
   height: 500px;
 }
@@ -161,12 +170,14 @@ main {
   background-size: cover;
 }
 
+// タイトル
 .heading {
   font-family: 'Kiwi Maru', serif;
   margin-top: 30px;
   text-align: center;
 }
 
+// 新規登録フォーム
 .registration-form {
   min-height: 60vh;
   &__field {
@@ -177,6 +188,7 @@ main {
   }
 }
 
+// ログインフォーム
 .login-form {
   min-height: 60vh;
   &__field {
@@ -193,16 +205,19 @@ main {
   text-align: center;
 }
 
+// 新規登録とログインの入力エリア
 .registration-form__field,
 .login-form__field {
   margin: 20px 0;
 }
 
+// 新規登録とログインのボタンまわり
 .registration-form__actions,
 .login-form__actions {
   margin: 30px 0;
 }
 
+// カード
 .card-deck {
   width: 25%;
   transition: all 0.3s ease 0s;
@@ -252,6 +267,7 @@ main {
   margin-left: 10px;
 }
 
+// 画面topに戻る矢印
 #back {
   position: fixed;
   right: 20px;
@@ -262,6 +278,7 @@ main {
   width: 50px;
 }
 
+// フッター
 footer {
   width: 100%;
   height: 120px;
@@ -275,6 +292,7 @@ footer {
   font-size: 16px;
 }
 
+// ページング
 .pagination>li>a {
   border: none;
   color: #696969;
@@ -289,15 +307,17 @@ footer {
   border-radius: 15px;
 }
 
+// 画像プレビュー
 .image-preview {
   margin-top: 15px;
 }
 
+// いいねの数
 .favorite-count {
   font-family: 'Kosugi Maru', sans-serif;
 }
 
-/* スマートフォンサイズ（768px）以下の際に適用される設定 */
+/* タブレットサイズ（768px）以下の際に適用される設定 */
 @media screen and (max-width: 768px) {
     .home-icon {
     transition: all 0.3s ease 0s;
@@ -412,8 +432,8 @@ footer {
   }
 }
 
-/* スマートフォンサイズ（425px）以下の際に適用される設定 */
-@media screen and (max-width: 425px) {
+/* スマートフォンサイズ（375px）以下の際に適用される設定 */
+@media screen and (max-width: 375px) {
   #notice {
     display: none;
   }
