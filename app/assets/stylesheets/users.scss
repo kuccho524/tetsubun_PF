@@ -137,6 +137,16 @@
     width: 100%;
   }
 
+  .user-info__user-about {
+    width: 50%;
+  }
+
+  .user-name-title,
+  .following-title,
+  .follower-title {
+    margin-right: 10px;
+  }
+
   .buttons {
     display: block;
     margin: 0 auto;

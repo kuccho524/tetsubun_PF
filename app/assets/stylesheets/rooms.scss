@@ -86,7 +86,8 @@
 
 // チャットのメッセージ
 .chat-messages {
-  width: 100%;
+  margin: 0 auto;
+  width: 800px;
   background-color: #66ccff;
 }
 
@@ -226,6 +227,10 @@
 
 /* タブレットサイズ（768px）以下の際に適用される設定 */
 @media screen and (max-width: 768px) {
+  .chat-messages {
+    width: 100%;
+  }
+
   .chat-lists {
     background-color: #fff;
     width: 90%;
