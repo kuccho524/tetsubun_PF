@@ -15,7 +15,7 @@
   <!-- ユーザログイン時にコメントを表示する -->
   <% if user_signed_in? %>
     <div class="row">
-      <div class="col-sm-7 mx-auto">
+      <div class="col-sm-10 mx-auto">
         <section id="comment-area">
           <%= render 'shared/train_comments/train_comment-index', train: @train %>
         </section>

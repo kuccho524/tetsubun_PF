@@ -59,3 +59,14 @@
 .user-lists:nth-child(10+n) {
   margin: 0;
 }
+
+/* スマートフォンサイズ（425px）以下の際に適用される設定 */
+@media screen and (max-width: 425px) {
+  .user-lists {
+    width: 300px;
+    list-style: none;
+    font-family: 'Kosugi Maru', sans-serif;
+    margin: 0 auto;
+    border-bottom: 1px solid #f0f8ff;
+  }
+}

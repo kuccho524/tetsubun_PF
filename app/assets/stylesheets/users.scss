@@ -4,57 +4,81 @@
 
 // ユーザ情報
 .user-info {
-  min-height: 50vh;
   display: flex;
   justify-content: center;
   font-family: 'Kosugi Maru', sans-serif;
-  &__user-image .profile_image {
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
+  &__user-image {
+    width: 40%;
+    height: 250px;
   }
-  &__user-name {
-    font-family: 'Kosugi Maru', sans-serif;
+  &__user-image .profile_image {
+    width: 100%;
+    height: 250px;
+    border-radius: 100%;
+  }
+  &__user-about {
+    width: 40%;
+    list-style: none;
+    &--user-name {
+      display: flex;
+    }
+    &--user-relationship .user-followings {
+      display: flex;
+    }
+    &--user-relationship .user-followers {
+      display: flex;
+    }
   }
   &__introduction {
     font-family: 'Kosugi Maru', sans-serif;
   }
 }
 
-// ユーザイメージ
-.user-info__user-image .profile_image {
+.user-info {
   margin: 0 auto;
 }
 
-.user-info__user-detail {
-  margin-top: 20px;
+.user-info__user-about {
+  margin: 10px auto;
 }
 
-p {
-  margin-top: 5px;
+.user-info__user-about--user-name,
+.user-followings,
+.user-followers {
+  margin-bottom: 10px;
+}
+
+.user-name-title,
+.following-title,
+.follower-title {
+  margin-right: 20px;
+}
+
+// 他のユーザがユーザ情報を見た時の表示
+.buttons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Kosugi Maru', sans-serif;
 }
 
 // 編集画面のリンク
 .edit-link {
   margin-top: 20px;
+  margin-bottom: 20px;
   font-family: 'Kosugi Maru', sans-serif;
 }
 
 // チャットルームへのリンク
 .chat-link {
-  margin-top: 20px;
-  font-family: 'Kosugi Maru', sans-serif;
+  margin-top: 10px;
+  margin-left: 40px;
 }
 
 // 各リンク
 .links {
   margin-bottom: 40px;
   font-family: 'Kosugi Maru', sans-serif;
-}
-
-// マイページ
-.my-page {
-  margin-top: 30px;
 }
 
 .form-group {
@@ -81,136 +105,45 @@ p {
   height: 150px;
 }
 
+.edit-page-buttons {
+  font-family: 'Kosugi Maru', sans-serif;
+  margin-bottom: 15px;
+}
+
+.user-update {
+  display: flex;
+}
+
+.mypage-link {
+  display: flex;
+}
+
 /* タブレットサイズ（768px）以下の際に適用される設定 */
 @media screen and (max-width: 768px) {
-  .my-page {
-    width: 100%;
-    margin: 20px auto;
-  }
-
   .form-group .image .profile_image {
     height: 350px;
-    width: 480px;
+    width: 100%;
   }
 
-  .user-info {
-    display: block;
-  }
-
-  .user-info .col-sm-2 {
-    margin-left: 300px;
-  }
-
-  .user-info .col-sm-10 {
+  .user-trains {
     margin: 0 auto;
-  }
-
-  .user-info__user-name {
-    margin: 10px auto;
-    width: 145px;
-    margin-left: -25px;
-  }
-
-  .user-info__introduction {
-    text-align: center;
-  }
-
-  .user-info__relationship {
-    margin: 0 auto 20px;
-    width: 120px;
-    margin-left: -15px;
-  }
-
-  .user-info .table th:nth-child(2) {
-    width: 75px;
-  }
-
-  .user-info .favorite-count {
-    display: none;
-  }
-
-  .image .profile_image {
-    height: 300px;
-    width: 275px;
-  }
-
-  .buttons {
-    text-align: center;
-    width: 315px;
-    margin-left: -105px;
-  }
-
-  .chat-link {
-    margin-bottom: 20px;
-  }
-
-  .edit-link {
-    margin-bottom: 20px;
-    width: 315px;
-    margin-left: -107px;
   }
 }
 
 /* スマートフォンサイズ（425px）以下の際に適用される設定 */
 @media screen and (max-width: 425px) {
-  .my-page .user-info {
-    width: 100%;
-    margin: 20px auto;
-  }
-
-  .user-info {
-    display: block;
-  }
-
-  .user-info .col-sm-2 {
-    margin-left: 0;
-  }
-
-  .user-info .col-sm-10 {
-    width: 350px;
-    margin: 0 auto;
-  }
-
-  .user-info__user-name {
-    margin: 10px auto;
-  }
-
-  .user-info__introduction {
-    text-align: center;
-  }
-
-  .user-info__relationship {
-    margin: 0 auto 20px;
-  }
-
-  .user-info .table {
-    width: 335px;
-    font-size: 13px;
-  }
-
-  .user-info .table th:nth-child(2) {
-    width: 75px;
-  }
-
-  .user-info .favorite-count {
-    display: none;
-  }
-
   .form-group .image .profile_image {
     height: 300px;
-    width: 275px;
+    width: 100%;
   }
 
   .buttons {
-    text-align: center;
+    display: block;
     margin: 0 auto;
   }
 
   .chat-link {
-    margin-bottom: 20px;
-  }
-
-  .edit-link {
-    margin: 0 auto 20px;
+    margin-top: 15px;
+    margin-left: 0;
   }
 }

@@ -21,7 +21,12 @@
      <%= f.label :紹介文, class: "font-weight-bold" %>
      <%= f.text_area :introduction, class: "form-control introduction", size: '40x8' %>
    </div>
-   <div class="form-group">
-     <%= f.submit '更新する', class: 'btn btn-success' %>　|　<%= link_to 'マイページへ', user_path(@user), class: "btn btn-info" %>
+   <div class="edit-page-buttons">
+      <div class="user-update">
+        <%= f.submit '更新する', class: 'btn btn-success', style: "margin-right: 10px;" %>
+      <div class="mypage-link">
+         <%= link_to 'マイページへ', user_path(@user), class: "btn btn-info" %>
+      </div>
    </div>
+
 <% end %>

@@ -23,7 +23,7 @@
       <%= f.text_area :body, class: 'form-control train_body', size: "40x4" %>
     </div>
     <div class="form-group">
-      <%= f.submit '更新する', class: 'btn btn-success' %>　|　<%= link_to '投稿を削除する', train_path(train.id), method: :delete, data: { confirm: 'この投稿データを削除しますか？' }, class: "btn btn-danger" %>
+      <%= f.submit '更新する', class: 'btn btn-success' %>
     </div>
   </section>
 <% end %>

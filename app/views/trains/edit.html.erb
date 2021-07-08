@@ -2,13 +2,21 @@
 <div class='container'>
   <div class='row'>
     <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
-      <h1 class="heading">投稿編集画面</h1>
+      <h2 class="heading">投稿編集画面</h2>
   		<%= render 'shared/trains/train-edit-form', train: @train %>
 
   		<!-- 各リンクを表示 -->
-  		<div class="links">
-  		  <%= link_to '詳細ページへ', train_path(@train), class: "btn btn-primary" %>　|　<%= link_to 'ホームへ', root_path, class: "btn btn-secondary", data: {"turbolinks" => false} %>
-  		</div>
+  		<section class="links">
+  		  <div class="train-delete-link">
+  		    <%= link_to '投稿を削除する', train_path(@train.id), method: :delete, data: { confirm: 'この投稿データを削除しますか？' }, class: "btn btn-danger" %>
+  		  </div>
+  		  <div class="train-show-link">
+  		    <%= link_to '詳細ページへ', train_path(@train), class: "btn btn-primary" %>
+  		  </div>
+  		  <div class="go-home-link">
+  		    <%= link_to 'ホームへ', root_path, class: "btn btn-secondary", data: {"turbolinks" => false} %>
+  		  </div>
+  		</section>
     </div>
   </div>
 </div>

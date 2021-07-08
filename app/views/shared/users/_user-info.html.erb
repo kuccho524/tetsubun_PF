@@ -1,30 +1,31 @@
 <!-- ユーザの情報を表示 -->
-<div class="user-info__user-image">
-  <%= attachment_image_tag(user, :profile_image, size: "100x100", format: 'jpg', fallback: "no_image.jpg") %>
-</div>
-<table class="user-info__user-name">
-  <th>ユーザ名</th>
-  <th>　</th>
-  <th><%= user.name %></th>
-</table>
-<section class="user-info__introduction">
-  <p>
-   <strong>紹介文</strong><br>
-   <%= user.introduction %>
-  </p>
+<section class="user-info">
+  <div class="user-info__user-image">
+    <%= attachment_image_tag(user, :profile_image, format: 'jpg', fallback: "no_image.jpg") %>
+  </div>
+  <ul class="user-info__user-about">
+    <section class="user-info__user-about--user-name">
+      <li class="user-name-title">ユーザ名</li>
+      <li><%= user.name %></li>
+    </section>
+    <section class="user-info__user-about--user-relationship">
+      <div class="user-followings">
+        <li class="following-title">フォロー</li>
+        <li><%= link_to user.followings.count, user_follows_path(user.id) %></li>
+      </div>
+      <div class="user-followers">
+        <li class="follower-title">フォロワー</li>
+        <li class="follow-count"><%= link_to user.followers.count, user_followers_path(user.id) %></li>
+      </div>
+    </section>
+    <section class="user-info__user-about--user-introduction">
+      <li>
+        <strong>紹介文</strong>
+      </li>
+      <li><%= user.introduction %></li>
+    </section>
+  </ul>
 </section>
-<table class="user-info__relationship">
-  <tr>
-	  <th>フォロー</th>
-	  <th>　</th>
-	  <th><%= link_to user.followings.count, user_follows_path(user.id) %></th>
-  </tr>
-  <tr>
-	  <th>フォロワー</th>
-	  <th>　</th>
-	  <th class="follow-count"><%= link_to user.followers.count, user_followers_path(user.id) %></th>
-  </tr>
-</table>
 
 <!-- 自分のマイページを見ているかで表示を分ける -->
 <% if current_user != user %>

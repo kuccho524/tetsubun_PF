@@ -244,6 +244,10 @@ main {
   }
   &__card-train-line {
     font-family: 'Kosugi Maru', sans-serif;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
   }
   &__card-train-body {
     font-family: 'Kosugi Maru', sans-serif;
@@ -326,7 +330,15 @@ footer {
 
 /* タブレットサイズ（768px）以下の際に適用される設定 */
 @media screen and (max-width: 768px) {
-    .home-icon {
+  #notice {
+    display: none;
+  }
+
+  .user-name {
+    margin: 5px auto 5px;
+  }
+
+  .home-icon {
     transition: all 0.3s ease 0s;
   }
 
@@ -436,6 +448,25 @@ footer {
     font-family: 'Kosugi Maru', sans-serif;
   }
 
+  .d-flex {
+    margin: 20px auto;
+  }
+
+  .card-deck {
+    width: 30%;
+    transition: all 0.3s ease 0s;
+  }
+
+  .card-body {
+    &__train-activities {
+      display: block;
+    }
+  }
+
+  .card-body__train-activities--comment-count {
+    margin-left: 0;
+  }
+
   #back {
     display: none;
   }
@@ -449,6 +480,10 @@ footer {
 @media screen and (max-width: 425px) {
   #notice {
     display: none;
+  }
+
+  .user-name {
+    margin: 5px auto 5px;
   }
 
   .home-icon {
@@ -576,7 +611,21 @@ footer {
     &__train-activities {
       display: block;
     }
+    &__card-name {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+    }
+    &__card-train-line {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+    }
   }
+
+
 
   .card-body__train-activities--comment-count {
     margin-left: 0;
@@ -592,6 +641,10 @@ footer {
     &__actions {
       text-align: center;
     }
+  }
+
+  .login-introduction {
+    font-size: 15px;
   }
 
   #back {
