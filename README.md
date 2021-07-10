@@ -52,6 +52,9 @@ FaceBookなどの有名なSNSは利用していて少し複雑だなと感じた
   <li>
     <a href="https://docs.google.com/spreadsheets/d/17LlS8oGryjKE0sBG0XpksbKoVZ5obTZg/edit#gid=1281505798">アプリケーション詳細設計書</a>
   </li>
+  <li>
+    <a href="https://docs.google.com/presentation/d/19rQs_M_eBYw2CBvxLmgMPD9DYWT8N5Lq/edit#slide=id.p1">AWS設計図</a>
+  </li>
 </ul>
 
 ### チャレンジ要素一覧
