@@ -110,6 +110,7 @@ main {
 
 // 画像スライダー
 #image-sliders {
+  position: relative;
   height: 500px;
 }
 
@@ -168,6 +169,22 @@ main {
   height: 500px;
   background-image: image-url("DSC_0155.JPG");
   background-size: cover;
+}
+
+.about-guest {
+  position: absolute;
+  width: 100%;
+  top: 220px;
+  color: #fff;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.guest-content  {
+  font-weight: bold;
+}
+
+.guest-login-button {
+  margin-top: 15px;
 }
 
 // タイトル
@@ -333,6 +350,27 @@ footer {
 // いいねの数
 .favorite-count {
   font-family: 'Kosugi Maru', sans-serif;
+}
+
+/* 991px以下の際に適用される設定 */
+@media screen and (max-width: 991px) {
+  .search-form  #search {
+    width: 100%;
+  }
+
+  .search-form select {
+    width: 100%;
+  }
+
+  .search-form input {
+    width: 100%;
+  }
+
+  .search-form {
+    padding-bottom: 5px;
+    margin-left: 0;
+    font-family: 'Kosugi Maru', sans-serif;
+  }
 }
 
 /* タブレットサイズ（768px）以下の際に適用される設定 */
