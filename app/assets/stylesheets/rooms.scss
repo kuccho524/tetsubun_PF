@@ -4,7 +4,7 @@
 
 // チャットルームにメッセージがない時
 .no-message {
-  min-height: 55vh;
+  min-height: 80vh;
   text-align: center;
   margin: 40px 0;
   font-family: 'Kosugi Maru', sans-serif;
@@ -13,10 +13,14 @@
 // チャットルーム一覧
 .chat-rooms {
   margin: 30px 0;
-  min-height: 60vh;
+  min-height: 80vh;
 }
 
 // カード
+.chat-rooms .card {
+  height: 250px;
+}
+
 .card-deck {
   margin-top: 20px;
 }
@@ -220,6 +224,10 @@
   height: 80px;
 }
 
+.message-form .btn {
+  width: 590px;
+}
+
 .messsage-submit-btn .btn {
   font-family: 'Kosugi Maru', sans-serif;
   margin-bottom: 30px;
@@ -241,6 +249,10 @@
     width: 90%;
     height: 80px;
   }
+
+  .message-form .btn {
+    width: 90%;
+  }
 }
 
 /* スマートフォンサイズ（425px）以下の際に適用される設定 */
@@ -254,5 +266,9 @@
   .message-form textarea {
     width: 100%;
     height: 80px;
+  }
+
+  .message-form .btn {
+    width: 100%;
   }
 }

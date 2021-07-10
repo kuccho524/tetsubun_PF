@@ -1,9 +1,9 @@
-<h1 class="new-train-posts__heading"><span class="fas fa-plus-square"></span> 新着投稿</h1>
+<h1 class="new-train-posts__heading">新着投稿</h1>
 
 <!-- 非ユーザの時、新着投稿8件表示する -->
-<div class="d-flex flex-row flex-wrap">
+<div class="d-flex flex-row flex-wrap mx-auto">
   <% trains.first(8).each do |train| %>
-    <div class="card-deck mb-5 mr-2">
+    <div class="card-deck mb-5 mr-2 mx-auto">
       <div class="card">
         <div class="card-image">
           <%= link_to train_path(train.id) do %>
@@ -16,6 +16,7 @@
           </div>
           <div class="card-body__card-train-line font-weight-bold"><%= train.line %></div>
           <div class="card-body__card-train-body"><%= train.body %></div>
+          <div class="card-body__card-train-time"><%= train.created_at.strftime('%Y.%m.%d') %></div>
         </div>
       </div>
     </div>

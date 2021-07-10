@@ -1,7 +1,8 @@
 <!-- 検索結果で表示を分ける -->
 <% if users.empty? %>
-  <h3 class="no-user">該当するユーザは存在しません</h3>
+  <h3 class="no-user"><%= @word %> は存在しません</h3>
 <% else %>
+  <h3 class="search-user text-center"><strong><%= @word %></strong></h3>
   <% users.each do |user| %>
     <ul class='user-lists'>
       <section class="user-area">

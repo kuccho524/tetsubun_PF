@@ -6,6 +6,7 @@
         <li class="train-comment__comment-name"><%= train_comment.user.name %></li>
         <li class="train-comment__comment-body"><%= train_comment.comment %></li>
       </ul>
+      <div class="train-comment-time"><%= train_comment.created_at.strftime('%Y.%m.%d') %></div>
       <div class="train-comment__delete">
         <% if train_comment.user == current_user %>
           <%= link_to 'コメントを削除する', train_train_comment_path(train_comment.train_id, train_comment.id), method: :delete, remote: true, data: { confirm: 'コメントを削除しますか？' } %>
@@ -21,6 +22,6 @@
 </div>
 
 <!-- コメント入力フォーム -->
-<section class="comment-form mx-auto">
+<section class="comment-form text-center">
   <%= render 'shared/train_comments/comment-form', train: train, train_comment: @train_comment %>
 </section>

@@ -1,9 +1,9 @@
-<h1 class="timeline__heading"><span class="fas fa-file-alt"></span> タイムライン</h1>
+<h1 class="timeline__heading">タイムライン</h1>
 
 <!-- ユーザログイン時、タイムラインを16件表示する -->
-<div class="d-flex flex-row flex-wrap">
+<div class="d-flex flex-row flex-wrap mx-auto">
   <% follow_users_trains.first(16).each do |train| %>
-    <div class="card-deck mb-5 mr-2">
+    <div class="card-deck mb-5 mr-2 mx-auto">
       <div class="card">
         <div class="card-image">
           <%= link_to train_path(train.id) do %>
@@ -23,6 +23,7 @@
           </div>
           <div class="card-body__card-train-line font-weight-bold"><%= train.line %></div>
           <div class="card-body__card-train-body"><%= train.body %></div>
+          <div class="card-body__card-train-time"><%= train.created_at.strftime('%Y.%m.%d') %></div>
           <% if user_signed_in? %>
             <div class="card-body__train-activities">
               <div id="favorite_<%= train.id %>"><%= render 'shared/favorites/favorite-btn', train: train %></div>

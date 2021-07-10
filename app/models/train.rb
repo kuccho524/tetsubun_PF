@@ -18,9 +18,9 @@ class Train < ApplicationRecord
   end
 
   # 検索方法
-  def self.looks(search)
-    if search
-      Train.where(['body LIKE ?', "%#{search}%"])
+  def self.looks(word)
+    if word
+      Train.where(['body LIKE ?', "%#{word}%"])
     else
       Train.all
     end

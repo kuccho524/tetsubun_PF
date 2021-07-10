@@ -3,11 +3,12 @@ class SearchesController < ApplicationController
   before_action :authenticate_user!
 
   def search
+    @word = params[:word]
     @range = params[:range]
     if @range == "User"
-      @users = User.looks(params[:search]).page(params[:page]).per(7)
+      @users = User.looks(params[:word]).page(params[:page]).per(7)
     else
-      @trains = Train.looks(params[:search]).page(params[:page]).reverse_order.per(8)
+      @trains = Train.looks(params[:word]).page(params[:page]).reverse_order.per(8)
     end
   end
 end

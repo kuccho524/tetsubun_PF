@@ -49,9 +49,9 @@ class User < ApplicationRecord
   end
 
   # 検索方法
-  def self.looks(search)
-    if search
-      User.where(['name LIKE ?', "%#{search}%"])
+  def self.looks(word)
+    if word
+      User.where(['name LIKE ?', "%#{word}%"])
     else
       User.all
     end
