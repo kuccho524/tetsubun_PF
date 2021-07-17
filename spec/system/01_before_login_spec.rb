@@ -169,7 +169,7 @@ describe 'ユーザーログイン前のテスト' do
       it 'ログインと表示される' do
         expect(page).to have_content 'Log in'
       end
-      it 'emailフォームが表示される' do
+      it 'nameフォームが表示される' do
         expect(page).to have_field 'user[name]'
       end
       it 'emailフォームが表示される' do
@@ -178,7 +178,7 @@ describe 'ユーザーログイン前のテスト' do
       it 'passwordフォームが表示される' do
         expect(page).to have_field 'user[password]'
       end
-      it ' ログインボタンが表示される' do
+      it 'ログインボタンが表示される' do
         expect(page).to have_button 'ログイン'
       end
       it '新規登録リンクが表示される:上から3番目のリンクが新規登録である' do
@@ -190,7 +190,7 @@ describe 'ユーザーログイン前のテスト' do
     context 'リンク内容を確認' do
       subject { current_path }
 
-      it 'SIGN UPを押すと新規登録画面に遷移する' do
+      it '新規登録を押すと新規登録画面に遷移する' do
         click_link 'nav-link6'
         is_expected.to eq '/users/sign_up'
       end
@@ -198,7 +198,6 @@ describe 'ユーザーログイン前のテスト' do
 
     context 'ログイン成功のテスト' do
       before do
-        fill_in 'user[name]', with: user.name
         fill_in 'user[email]', with: user.email
         fill_in 'user[password]', with: user.password
         click_button 'ログイン'
@@ -211,7 +210,6 @@ describe 'ユーザーログイン前のテスト' do
 
     context 'ログイン失敗のテスト' do
       before do
-        fill_in 'user[name]', with: ''
         fill_in 'user[email]', with: ''
         fill_in 'user[password]', with: ''
         click_button 'ログイン'
