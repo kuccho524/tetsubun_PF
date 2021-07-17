@@ -35,6 +35,10 @@ html {
   margin: 5px auto;
 }
 
+#error_explanation ul {
+  list-style: none;
+}
+
 // ホームに戻るアイコン
 .home-icon {
   transition: all 0.3s ease 0s;

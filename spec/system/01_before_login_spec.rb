@@ -167,13 +167,10 @@ describe 'ユーザーログイン前のテスト' do
         expect(current_path).to eq '/users/sign_in'
       end
       it 'ログインと表示される' do
-        expect(page).to have_content 'Log in'
+        expect(page).to have_content 'ログイン'
       end
       it 'nameフォームが表示される' do
         expect(page).to have_field 'user[name]'
-      end
-      it 'emailフォームが表示される' do
-        expect(page).to have_field 'user[email]'
       end
       it 'passwordフォームが表示される' do
         expect(page).to have_field 'user[password]'
@@ -198,19 +195,19 @@ describe 'ユーザーログイン前のテスト' do
 
     context 'ログイン成功のテスト' do
       before do
-        fill_in 'user[email]', with: user.email
+        fill_in 'user[name]', with: user.name
         fill_in 'user[password]', with: user.password
         click_button 'ログイン'
       end
 
-      it 'ログイン後のリダイレクト先がみんなの投稿画面になっている' do
-        expect(current_path).to eq '/users/' + User.last.id.to_s
+      it 'ログイン後のリダイレクト先がマイページになっている' do
+        expect(current_path).to eq '/users/' + user.id.to_s
       end
     end
 
     context 'ログイン失敗のテスト' do
       before do
-        fill_in 'user[email]', with: ''
+        fill_in 'user[name]', with: ''
         fill_in 'user[password]', with: ''
         click_button 'ログイン'
       end
