@@ -25,20 +25,13 @@
 
 
   <!-- ユーザログイン時の編集ページとホーム画面のリンク先 -->
-  <% if user_signed_in? %>
-    <div class="row">
-      <div class="links col-sm-10 mx-auto text-center">
-        <%= render 'shared/trains/train-show-links', train: @train, user: @user %>
-      </div>
+  <div class="row">
+    <div class="links col-sm-10 mx-auto text-center">
+    <% if user_signed_in? %>
+      <%= render 'shared/trains/train-show-links', train: @train, user: @user %>
+    <% else %>
+      <%= link_to 'ホームへ', root_path, class: "btn btn-secondary", data: { "turbolinks" => false } %>
+    <% end %>
     </div>
-  <% end %>
-
-  <!-- 非ユーザが詳細画面を閲覧している時、ホーム画面へのリンクを表示する -->
-  <% unless user_signed_in? %>
-    <div class="row">
-      <div class="links col-sm-10 mx-auto text-center">
-        <%= link_to 'ホームへ', root_path, class: "btn btn-secondary", data: { "turbolinks" => false } %>
-      </div>
-    </div>
-  <% end %>
+  </div>
 </div>
