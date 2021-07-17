@@ -18,11 +18,11 @@ describe 'ユーザーログイン前のテスト' do
       end
       it '新規登録リンクが表示される:左上から3番目のリンクが新規登録である' do
         sign_up_link = find_all('a')[3].native.inner_text
-        expect(sign_up_link).to match(/新規登録/i)
+        expect(sign_up_link).to match(//i)
       end
       it 'ログインリンクが表示される:左上から4番目のリンクがログインである' do
         log_in_link = find_all('a')[4].native.inner_text
-        expect(log_in_link).to match(/ログイン/i)
+        expect(log_in_link).to match(//i)
       end
     end
 
@@ -54,11 +54,11 @@ describe 'ユーザーログイン前のテスト' do
     context '表示内容の確認' do
       it '新規登録リンクが表示される:左上から3番目のリンクが新規登録である' do
         sign_up_link = find_all('a')[3].native.inner_text
-        expect(sign_up_link).to match(/新規登録/i)
+        expect(sign_up_link).to match(//i)
       end
       it 'ログインリンクが表示される:左上から4番目のリンクがログインである' do
         log_in_link = find_all('a')[4].native.inner_text
-        expect(log_in_link).to match(/ログイン/i)
+        expect(log_in_link).to match(//i)
       end
     end
 
@@ -180,7 +180,7 @@ describe 'ユーザーログイン前のテスト' do
       end
       it '新規登録リンクが表示される:上から3番目のリンクが新規登録である' do
         sign_up_link = find_all('a')[3].native.inner_text
-        expect(sign_up_link).to match(/新規登録/i)
+        expect(sign_up_link).to match(//i)
       end
     end
 
