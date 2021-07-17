@@ -44,6 +44,9 @@ describe 'ユーザーログイン後のテスト' do
         logout_link = find_all('a')[8].native.inner_text
         expect(logout_link).to match(//i)
       end
+      it '検索フォームが表示される' do
+        expect(page).to have_field '検索'
+      end
     end
 
     context 'リンク内容を確認(LOG OUTは”ユーザーログアウトのテスト”でテスト済み)' do
@@ -80,6 +83,21 @@ describe 'ユーザーログイン後のテスト' do
       it 'ログアウトアイコンを押すとログアウトしてホームに遷移する' do
         click_link 'nav-link9'
         is_expected.to eq '/'
+      end
+    end
+  end
+
+  describe 'ホーム画面のテスト' do
+    before do
+      visit root_path
+    end
+
+    context '表示内容の確認(ヘッダーは確認済み)' do
+      it "鉄分とは？と表示される" do
+        expect(page).to have_content "鉄分とは？"
+      end
+      it "新着投稿と表示される" do
+        expect(page).to have_content "新着投稿"
       end
     end
   end
