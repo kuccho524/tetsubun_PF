@@ -88,8 +88,8 @@ FaceBookなどの有名なSNSは利用していて少し複雑だなと感じた
   </li>
 </ul>
 
-<h4>その他チャレンジ要素を含む機能一覧</h4>
-<a href="https://docs.google.com/spreadsheets/d/1Y4alK0mXdi5_dgJfUNuOS4w_xBcWF-woQOjHPi65cQ0/edit#gid=1373494904"></a>
+<h4><a href="https://docs.google.com/spreadsheets/d/1Y4alK0mXdi5_dgJfUNuOS4w_xBcWF-woQOjHPi65cQ0/edit#gid=1373494904">その他チャレンジ要素を含む機能一覧</a></h4>
+
 
 ### 開発環境
 - OS：Linux(CentOS)<br>
