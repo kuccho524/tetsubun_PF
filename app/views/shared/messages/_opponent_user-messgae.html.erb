@@ -5,5 +5,5 @@
   <div class="left-message__chat-icon--opponent-user"><%= message.user.name %></div>
 </div>
 <div class="balloon-left">
-  <strong><%= message.message %></strong>
+  <strong><%= safe_join(message.message.split("\n"),tag(:br)) %></strong>
 </div>
