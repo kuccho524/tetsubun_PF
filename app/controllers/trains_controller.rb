@@ -21,7 +21,7 @@ class TrainsController < ApplicationController
     if @train.user == current_user
       render :edit
     else
-      redirect_to train_path(@train), notice: "投稿者以外編集できません"
+      redirect_to train_path(@train), notice: "編集できません"
     end
   end
 
@@ -45,7 +45,7 @@ class TrainsController < ApplicationController
   def update
     @train = Train.find(params[:id])
     if @train.update(train_params)
-      redirect_to train_path(@train), notice: "投稿内容を更新しました"
+      redirect_to train_path(@train), notice: "更新しました"
     else
       render :edit
     end

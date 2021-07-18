@@ -59,7 +59,7 @@
 .chat-lists {
   margin: 55px 0;
   background-color: #fff;
-  width: 800px;
+  width: 100%;
   overflow-x: scroll
 }
 
@@ -91,7 +91,7 @@
 // チャットのメッセージ
 .chat-messages {
   margin: 0 auto;
-  width: 800px;
+  width: 100%;
   background-color: #66ccff;
 }
 
@@ -235,16 +235,6 @@
 
 /* タブレットサイズ（768px）以下の際に適用される設定 */
 @media screen and (max-width: 768px) {
-  .chat-messages {
-    width: 100%;
-  }
-
-  .chat-lists {
-    background-color: #fff;
-    width: 90%;
-    overflow-x: scroll
-  }
-
   .message-form textarea {
     width: 90%;
     height: 80px;
@@ -257,12 +247,6 @@
 
 /* スマートフォンサイズ（425px）以下の際に適用される設定 */
 @media screen and (max-width: 425px) {
-  .chat-lists {
-    background-color: #fff;
-    width: 100%;
-    overflow-x: scroll
-  }
-
   .message-form textarea {
     width: 100%;
     height: 80px;

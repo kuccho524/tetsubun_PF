@@ -66,11 +66,11 @@ describe 'ユーザーログイン前のテスト' do
       subject { current_path } # 対象
 
       it 'ロゴを押すとトップ画面に遷移する' do
-        click_link 'nav-link0'
+        click_link 'nav-link0' # リンクのクリック 'クリックしたいnameかidを入れる'
         is_expected.to eq '/'
       end
       it '新規登録のアイコンを押すと新規登録画面に遷移する' do
-        click_link 'nav-link6' # リンクのクリック 'クリックしたいnameかidを入れる'
+        click_link 'nav-link6'
         is_expected.to eq '/users/sign_up'
       end
       it '新規登録のアイコンを押すとログイン画面に遷移する' do
@@ -124,7 +124,7 @@ describe 'ユーザーログイン前のテスト' do
 
     context '新規登録成功のテスト' do
       before do
-        fill_in 'user[name]', with: Faker::Lorem.characters(number: 5) # nameかidを入力する
+        fill_in 'user[name]', with: Faker::Lorem.characters(number: 5)
         fill_in 'user[email]', with: Faker::Internet.email
         fill_in 'user[password]', with: 'password'
         fill_in 'user[password_confirmation]', with: 'password'

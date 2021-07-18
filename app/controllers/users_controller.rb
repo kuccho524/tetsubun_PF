@@ -35,10 +35,10 @@ class UsersController < ApplicationController
     else
       if current_user.name == "guest"
         redirect_to user_path(current_user)
-        flash[:notice] = "ゲストユーザは編集できません。"
+        flash[:notice] = "編集できません"
       else
         redirect_to user_path(current_user)
-        flash[:notice] = "本人以外編集できません。"
+        flash[:notice] = "編集できません"
       end
     end
   end
@@ -47,7 +47,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      redirect_to user_path(@user), notice: "ユーザ情報を更新しました。"
+      redirect_to user_path(@user), notice: "更新しました"
     else
       render :edit
     end

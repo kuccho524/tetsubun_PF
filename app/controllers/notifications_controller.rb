@@ -13,6 +13,6 @@ class NotificationsController < ApplicationController
   # 通知を全削除
   def destroy_all
     @notifications = current_user.passive_notifications.destroy_all
-    redirect_to notifications_path(current_user), notice: "通知を削除しました。"
+    redirect_to notifications_path(current_user), notice: "削除しました"
   end
 end
