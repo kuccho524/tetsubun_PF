@@ -92,15 +92,15 @@ FaceBookなどの有名なSNSは利用していて少し複雑だなと感じた
 <h4><a href="https://docs.google.com/spreadsheets/d/1Y4alK0mXdi5_dgJfUNuOS4w_xBcWF-woQOjHPi65cQ0/edit#gid=1373494904">その他チャレンジ要素を含む機能一覧</a></h4>
 
 ### 使用技術
-Ruby 2.6.3
-Ruby on Rails 5.2.5
-MySQL 5.7.22
-Nginx
-Puma
-EC2
-VPC
-RDS
-Route53
+Ruby 2.6.3<br>
+Ruby on Rails 5.2.5<br>
+MySQL 5.7.22<br>
+Nginx<br>
+Puma<br>
+EC2<br>
+VPC<br>
+RDS<br>
+Route53<br>
 Certbot
 
 ### 開発環境
