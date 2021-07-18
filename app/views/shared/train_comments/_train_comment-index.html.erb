@@ -4,7 +4,7 @@
     <div class="comment-lists">
       <ul class="train-comment">
         <li class="train-comment__comment-name"><%= train_comment.user.name %></li>
-        <li class="train-comment__comment-body"><%= train_comment.comment %></li>
+        <li class="train-comment__comment-body"><%= safe_join(train_comment.comment.split("\n"),tag(:br)) %></li>
       </ul>
       <div class="train-comment-time"><%= train_comment.created_at.strftime('%Y.%m.%d') %></div>
       <div class="train-comment__delete">
