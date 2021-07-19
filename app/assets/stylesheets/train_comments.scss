@@ -16,6 +16,10 @@
   &__comment-name {
     font-weight: bold;
   }
+  &__comment-body {
+    word-break:break-all;
+    word-wrap:break-word;
+  }
 }
 
 .train-comment-time {
