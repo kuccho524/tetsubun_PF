@@ -42,9 +42,6 @@ FaceBookなどの有名なSNSは利用していて少し複雑だなと感じた
 ### 設計書
 <ul>
   <li>
-    <a href="https://docs.google.com/presentation/d/1x784pqVEqCAz56WZRL-58tzVA4ksWyoe/edit#slide=id.p1">画面遷移図</a>
-  </li>
-  <li>
     <a href="https://drive.google.com/file/d/1HkoP6Zt81_0ExnAuyxt7Wlo1jUF1dtiu/view">ER図</a>
   </li>
   <li>
