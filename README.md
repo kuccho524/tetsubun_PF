@@ -1,5 +1,6 @@
 # 鉄分
-サイトURL：https://tetsubun-tetsudo.com/
+サイトURL：https://tetsubun-tetsudo.com/<br>
+※サーバ停止中につき閲覧不可
 
 ## ご利用にあたって
 ### <お手軽に触りたい方>
